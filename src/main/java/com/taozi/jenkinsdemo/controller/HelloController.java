@@ -8,6 +8,6 @@ public class HelloController {
 
     @RequestMapping("hello")
     public String hello() {
-        return "hello";
+        return "hello 2024 年 10 月 30 日 22:40:28";
     }
 }
