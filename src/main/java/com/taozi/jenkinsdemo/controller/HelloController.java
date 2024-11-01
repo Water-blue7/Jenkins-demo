@@ -9,9 +9,7 @@ public class HelloController {
 
     @GetMapping()
     public String index(){
-        return "2024-11-02 00:23:06" +
-                "@GetMapping：专用于 GET 请求，是 @RequestMapping(method = RequestMethod.GET) 的简写。" +
-                "自动化构建 docker 镜像并运行,虽然Finished: UNSTABLE，但还是运行成功了？？？why！";
+        return "Jenkins 中Source files不能使用绝对路径，且起始位置是workspace/project_name中";
     }
     @RequestMapping("hello")
     public String hello() {
