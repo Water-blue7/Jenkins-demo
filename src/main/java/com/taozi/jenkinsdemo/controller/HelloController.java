@@ -1,14 +1,16 @@
 package com.taozi.jenkinsdemo.controller;
 
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class HelloController {
 
-    @RequestMapping()
+    @GetMapping()
     public String index(){
-        return "2024-11-02 00:23:06";
+        return "2024-11-02 00:23:06" +
+                "@GetMapping：专用于 GET 请求，是 @RequestMapping(method = RequestMethod.GET) 的简写。";
     }
     @RequestMapping("hello")
     public String hello() {
