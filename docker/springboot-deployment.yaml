@@ -8,12 +8,12 @@ spec:
   replicas: 2
   selector:
     matchLabels:
-      app: demo
+      app: springboot-deployment
   template:
     metadata:
-      name: demo
+      name: springboot-pod
       labels:
-        app: demo
+        app: springboot-deployment
     spec:
       containers:
         - name: demo
