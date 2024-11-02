@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: demo
-          image: demo:latest
+          image: nginx:latest
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 8080
