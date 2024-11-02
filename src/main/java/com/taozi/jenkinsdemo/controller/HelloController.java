@@ -9,7 +9,7 @@ public class HelloController {
 
     @GetMapping()
     public String index(){
-        return "测试";
+        return "测试在 k8s-master 构建";
     }
     @RequestMapping("hello")
     public String hello() {
