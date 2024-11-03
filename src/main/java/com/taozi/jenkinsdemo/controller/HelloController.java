@@ -9,7 +9,7 @@ public class HelloController {
 
     @GetMapping()
     public String index(){
-        return "u2024-11-03 22:11:00";
+        return "u2024-11-03 22:22:00";
     }
     @RequestMapping("hello")
     public String hello() {
