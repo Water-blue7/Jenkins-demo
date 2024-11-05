@@ -3,11 +3,12 @@ kind: Service
 metadata:
   name: demo-service
 spec:
-  type: NodePort
+  type: ExternalName
+  externalName: my-app.default.svc.cluster.local
   selector:
     app: nginx1
   ports:
     - protocol: TCP
-      port: 80
-      targetPort: 80
-      nodePort: 30088
+      port: 80  # 服务的端口，即用户或其他服务访问该服务的端口
+      targetPort: 80  # 后端 Pod 的端口，即服务将请求转发到 Pod 的该端口
+      nodePort: 30088 # 节点端口，允许从集群外通过 <NodeIP>:<nodePort> 访问该服务
