@@ -9,7 +9,7 @@ imageName=$2
 current_time=$(date "+%Y-%m-%d %H:%M:%S")
 echo "$current_time ===============================" > $path/output.log 2>&1
 echo "$current_time ==》项目路径：$path，镜像名称：$imageName 开始--" >> $path/output.log 2>&1
-c
+
 # 不删除也行，会自动覆盖掉旧文件
 # rm -rf /root/springboot/jarfile && rm /root/springboot/Dockerfile >> $path/output.log 2>&1
 echo "$current_time ==》删除 deployment" >> $path/output.log 2>&1
