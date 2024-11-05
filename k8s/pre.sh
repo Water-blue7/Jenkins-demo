@@ -1,6 +1,7 @@
 #!/bin/bash
 
-rm -rf /root/springboot/jarfile && rm /root/springboot/Dockerfile > output.log 2>&1
+# 不删除也行，会自动覆盖掉旧文件
+# rm -rf /root/springboot/jarfile && rm /root/springboot/Dockerfile > output.log 2>&1
 KUBECONFIG=/etc/kubernetes/admin.conf kubectl delete -f /root/springboot/springboot-deployment.yaml  >> output.log 2>&1
 KUBECONFIG=/etc/kubernetes/admin.conf kubectl delete -f /root/springboot/springboot-service.yaml >> output.log 2>&1
 # 停止并删除所有使用 demo 镜像的容器

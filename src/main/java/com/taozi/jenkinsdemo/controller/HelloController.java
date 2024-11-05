@@ -9,7 +9,7 @@ public class HelloController {
 
     @GetMapping()
     public String index(){
-        return "K8S 部署,OK";
+        return "K8S 部署,OK，不主动删除文件，测试自动覆盖";
     }
     @RequestMapping("hello")
     public String hello() {
