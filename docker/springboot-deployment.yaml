@@ -12,6 +12,15 @@ spec:
       labels:
         app: demo-app
     spec:
+      affinity:
+        nodeAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+            nodeSelectorTerms:
+              - matchExpressions:
+                  - key: kubernetes.io/hostname  # 这里的 key 是节点的主机名标签
+                    operator: In
+                    values:
+                      - k8s-master  # 指定你希望调度到的节点名称
       containers:
         - name: demo
           image: demo:latest
