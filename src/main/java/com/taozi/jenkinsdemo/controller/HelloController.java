@@ -9,10 +9,10 @@ public class HelloController {
 
     @GetMapping()
     public String index(){
-        return "u2024-11-03 22:52:00";
+        return "K8S 部署";
     }
     @RequestMapping("hello")
     public String hello() {
-        return " 2024-11-03 00:51:43";
+        return "/hello";
     }
 }
