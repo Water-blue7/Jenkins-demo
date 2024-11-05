@@ -9,7 +9,7 @@ public class HelloController {
 
     @GetMapping()
     public String index(){
-        return "再来一次测试";
+        return "again";
     }
     @RequestMapping("hello")
     public String hello() {
