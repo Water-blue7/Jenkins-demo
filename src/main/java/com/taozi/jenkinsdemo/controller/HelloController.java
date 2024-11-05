@@ -9,7 +9,7 @@ public class HelloController {
 
     @GetMapping()
     public String index(){
-        return "使用行命令+参数";
+        return "再来一次测试";
     }
     @RequestMapping("hello")
     public String hello() {
