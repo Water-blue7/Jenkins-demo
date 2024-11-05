@@ -3,9 +3,9 @@ kind: Service
 metadata:
   name: demo-service
 spec:
-  type: ClusterIP
+  type: NodePort
   selector:
-    app: demo
+    app: demo-app
   ports:
     - protocol: TCP
       port: 8080  # 服务的端口，即用户或其他服务访问该服务的端口
