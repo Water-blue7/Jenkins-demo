@@ -9,7 +9,7 @@ public class HelloController {
 
     @GetMapping()
     public String index(){
-        return "again";
+        return "2024 年 11 月 6 日";
     }
     @RequestMapping("hello")
     public String hello() {
